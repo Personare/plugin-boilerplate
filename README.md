@@ -8,7 +8,7 @@ mas com uma estrutura já bem definida, pronto para testes unitários, linter + 
 * `composer ci` irá executar todos os scripts importantes para o CI, consulte o `composer.json` caso queira roda-los individualmente;
 * `yarn lint` irá executar o linter para JavaScript + SASS;
 * `yarn build` comando para gerar os bundles;
-## Não esqueça de renomear`
+## Não esqueça de renomear
 Renomeie todas as strings abaixo para algo que faça sentido para o projeto que está a desenvolver.
 * `MY_APP_`
 * `MyApp`
