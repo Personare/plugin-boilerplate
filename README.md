@@ -14,6 +14,6 @@ Renomeie todas as strings abaixo para algo que faça sentido para o projeto que 
 * `MyApp`
 * `my-app`
 ## Exemplo de uso
-Consulte os arquivos dentro de `src/WordPress/`, lá você vai encontrar bons exemplos de como declarar hooks nesta estrutura
+Consulte os arquivos dentro de `src/WordPress/`, lá você vai encontrar bons exemplos de como declarar hooks nesta estrutura,
 caso queira registrar um CPT consulte `src/WordPress/Services/ExampleServiceProvider.php` ou se caso quer registrar uma
 Taxonomia, então consulte `src/WordPress/Services/ExampleCategoryServiceProvider.php`
