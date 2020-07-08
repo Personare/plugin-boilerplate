@@ -5,7 +5,7 @@ mas com uma estrutura já bem definida, pronto para testes unitários, linter + 
 * PHP >= 7.4
 * Composer
 ## Scripts
-* `composer ci` irá executar todos os scripts importantes para o CI, consulte o `composer.json` caso querira roda-los individualmente;
+* `composer ci` irá executar todos os scripts importantes para o CI, consulte o `composer.json` caso queira roda-los individualmente;
 * `yarn lint` irá executar o linter para JavaScript + SASS;
 * `yarn build` comando para gerar os bundles;
 ## Não esqueça de renomear`
