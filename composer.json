@@ -1,13 +1,13 @@
 {
-  "name": "apiki/wpsteak-plugin",
-  "description": "A fully structured WordPress plugin.",
+  "name": "personare/plugin-boilerplate",
+  "description": "Personare Plugin Boilerplate.",
   "type": "wordpress-plugin",
   "license": "GPL-2.0-only",
   "require": {
-    "apiki/wpsteak": "0.1.2",
     "composer/installers": "1.9.0",
     "league/container": "3.3.1",
-    "php": ">=7.4"
+    "php": ">=7.4",
+    "psr/log": "^1.1"
   },
   "require-dev": {
     "dealerdirect/phpcodesniffer-composer-installer": "0.7.0",
@@ -15,31 +15,35 @@
     "phpunit/phpunit": "8.5.6",
     "wp-coding-standards/wpcs": "2.3.0",
     "slevomat/coding-standard": "6.3.9",
-    "edgedesign/phpqa": "1.23.3",
     "php-stubs/wordpress-stubs": "5.4.2",
-    "szepeviktor/phpstan-wordpress": "0.6.2",
-    "nette/neon": "3.1.2",
-    "vimeo/psalm": "3.12.1"
+    "squizlabs/php_codesniffer": "^3.5"
   },
   "autoload": {
     "psr-4": {
-      "App\\": "src/"
+      "MyApp\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "App\\Test\\": "tests/"
+      "MyApp\\Test\\": "tests/"
     }
   },
   "scripts": {
-    "install-codestandards": [
-      "Dealerdirect\\Composer\\Plugin\\Installers\\PHPCodeSniffer\\Plugin::run"
+    "ci": [
+      "@lint",
+      "@static-analysis",
+      "@test"
     ],
-    "lint": [
-      "phpqa",
-      "psalm"
+    "download-phan": "php -r \"copy('https://github.com/phan/phan/releases/latest/download/phan.phar', 'phan.phar');\"",
+    "download-tools": [
+      "@download-phan"
     ],
-    "lint:fix": "phpcbf",
-    "test": "phpunit"
+    "lint": "./vendor/bin/phpcs --standard=phpcs.xml",
+    "lint-fix": "./vendor/bin/phpcbf --standard=phpcs.xml",
+    "post-install-cmd": [
+      "@download-tools"
+    ],
+    "static-analysis": "php phan.phar --allow-polyfill-parser",
+    "test": "./vendor/bin/phpunit"
   }
 }

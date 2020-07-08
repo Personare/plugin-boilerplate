@@ -9,13 +9,10 @@
 	<file>.</file>
 	<!-- Ignoring Files and Folders:
 		https://github.com/squizlabs/PHP_CodeSniffer/wiki/Advanced-Usage#ignoring-files-and-folders -->
-	<exclude-pattern>api-reference/</exclude-pattern>
 	<exclude-pattern>dist/</exclude-pattern>
 	<exclude-pattern>node_modules/</exclude-pattern>
 	<exclude-pattern>resources/</exclude-pattern>
 	<exclude-pattern>vendor/</exclude-pattern>
-	<!-- Scrutinizer dependency -->
-	<exclude-pattern>wordpress/</exclude-pattern>
 
 	<!-- How to scan -->
 	<arg value="sp"/> <!-- Show sniff and progress -->
@@ -53,7 +50,8 @@
 	<rule ref="WordPress.WP.I18n">
 		<properties>
 			<property name="text_domain" type="array">
-				<element value="app"/>
+				<element value="my-app"/>
+				<element value="default"/>
 			</property>
 		</properties>
 	</rule>
@@ -61,10 +59,9 @@
 	<rule ref="SlevomatCodingStandard.Namespaces">
 		<properties>
 			<property name="namespacesRequiredToUse" type="array">
-				<element value="App"/>
-				<element value="Carbon_Fields"/>
-				<element value="Cedaro"/>
-				<element value="WPSteak"/>
+				<element value="MyApp"/>
+				<element value="League\Container"/>
+				<element value="Psr\Log"/>
 			</property>
 		</properties>
 	</rule>
@@ -72,8 +69,8 @@
 	<rule ref="SlevomatCodingStandard.Files.TypeNameMatchesFileName">
 		<properties>
 			<property name="rootNamespaces" type="array">
-				<element key="src" value="App"/>
-				<element key="tests" value="App\Test"/>
+				<element key="src" value="MyApp"/>
+				<element key="tests" value="MyApp\Test"/>
 			</property>
 		</properties>
 	</rule>

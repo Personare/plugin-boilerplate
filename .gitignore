@@ -21,6 +21,9 @@ phpstan-phpqa.neon
 /phpunit.xml
 /tests/_reports
 
+# Phan
+/phan.phar
+
 # NPM lockfile as it causes more problems than it solves
 /package-lock.json
 
