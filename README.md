@@ -1,57 +1,19 @@
-# WP Steak [![Build Status](https://scrutinizer-ci.com/g/Apiki/wpsteak-plugin/badges/build.png?b=master)](https://scrutinizer-ci.com/g/Apiki/wpsteak-plugin/build-status/master) [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/Apiki/wpsteak-plugin/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/Apiki/wpsteak-plugin/?branch=master) [![Code Coverage](https://scrutinizer-ci.com/g/Apiki/wpsteak-plugin/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/Apiki/wpsteak-plugin/?branch=master)
-## Features
-* All advantages from [WPSteak](https://github.com/Apiki/wpsteak)
-* [Dependency injection container](https://container.thephpleague.com/);
-* Ready for unit tests with PHPUnit;
-* PHP CodeSniffer configured with WordPress Coding Standards;
-* Wonderful resources processing configuration extracted from [wpemerge-theme](https://github.com/htmlburger/wpemerge-theme);
-* PHP PSR-4 autoloading for all your source code and tests;
+# Plugin Boilerplate
+Plugin destinado a ser usado como boilerplate, ele irá ser usado principalmente quando surgir a necessidade de criar um plugin WordPress do zero, 
+mas com uma estrutura já bem definida, pronto para testes unitários, linter + analisador estático de código e com container de injeção de dependência.
 ## Requirements
 * PHP >= 7.4
 * Composer
-## Quickstart
-1. Browse to `wp-content/plugins`.
-1. Run `composer create-project apiki/wpsteak-plugin your-plugin-name`.
-## Directory structure
-```shell
-.
-├── dist/                            # Bundles, optimized images etc.
-├── languages/                       # Language files.
-├── resources/                       # Build process configuration, Scripts, Styles, etc.
-├── src/                             # PSR-4 autoloaded classes.
-│   ├── Entities/                    # Classes for using on data mapper.
-│   │   ├── Categories.php
-│   │   ├── Category.php
-│   │   ├── ExampleCategory.php
-│   │   ├── Example.php
-│   │   ├── Examples.php
-│   │   ├── Page.php
-│   │   ├── Post.php
-│   │   ├── Posts.php
-│   │   ├── Tag.php
-│   │   └── Tags.php
-│   ├── Providers/                   # Your hooks declarations.
-│   │   ├── Assets
-│   │   │   ├── Admin.php
-│   │   │   ├── Editor.php
-│   │   │   ├── Login.php
-│   │   │   └── Theme.php
-│   │   ├── Example
-│   │   │   ├── PostMeta.php
-│   │   │   └── PostType.php
-│   │   └── ExampleCategory
-│   │       └── Taxonomy.php
-│   ├── Repositories/                # Where you put your data handle (includes API).
-│   │   ├── Category.php
-│   │   ├── Example.php
-│   │   ├── Page.php
-│   │   ├── Post.php
-│   │   └── Tag.php
-│   ├── Services/                    # Where your business logic goes on.
-│   └── Widgets/                     # Widget classes.
-├── tests/                           # PHP Unit tests.
-├── views/                           # View files used for metaboxes, shortcodes, etc.
-├── config.json.dist
-├── config.php                       # Where your providers and services providers will be loaded.
-└── wpsteak.php                      # Bootstrap plugin.
-```
+## Scripts
+* `composer ci` irá executar todos os scripts importantes para o CI, consulte o `composer.json` caso querira roda-los individualmente;
+* `yarn lint` irá executar o linter para JavaScript + SASS;
+* `yarn build` comando para gerar os bundles;
+## Não esqueça de renomear`
+Renomeie todas as strings abaixo para algo que faça sentido para o projeto que está a desenvolver.
+* `MY_APP_`
+* `MyApp`
+* `my-app`
+## Exemplo de uso
+Consulte os arquivos dentro de `src/WordPress/`, lá você vai encontrar bons exemplos de como declarar hooks nesta estrutura
+caso queira registrar um CPT consulte `src/WordPress/Services/ExampleServiceProvider.php` ou se caso quer registrar uma
+Taxonomia, então consulte `src/WordPress/Services/ExampleCategoryServiceProvider.php`
