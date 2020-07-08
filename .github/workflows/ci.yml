@@ -1,7 +1,6 @@
 name: CI
 
-on: [push]
-  # Mudar para pull_request apos os testes
+on: [pull_request]
 
 jobs:
   build-front-end:
