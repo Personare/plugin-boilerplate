@@ -12,12 +12,12 @@
 
 return [
 	'service_providers' => [
-		MyApp\WordPress\Services\Assets\AdminServiceProvider::class,
-		MyApp\WordPress\Services\Assets\EditorServiceProvider::class,
-		MyApp\WordPress\Services\Assets\LoginServiceProvider::class,
-		MyApp\WordPress\Services\Assets\ThemeServiceProvider::class,
-		MyApp\WordPress\Services\ExampleCategoryServiceProvider::class,
-		MyApp\WordPress\Services\ExampleServiceProvider::class,
-		MyApp\WordPress\Services\I18nServiceProvider::class,
+		MyApp\WordPress\Setup\Assets\AdminServiceProvider::class,
+		MyApp\WordPress\Setup\Assets\EditorServiceProvider::class,
+		MyApp\WordPress\Setup\Assets\LoginServiceProvider::class,
+		MyApp\WordPress\Setup\Assets\ThemeServiceProvider::class,
+		MyApp\WordPress\Setup\ExampleCategoryServiceProvider::class,
+		MyApp\WordPress\Setup\ExampleServiceProvider::class,
+		MyApp\WordPress\Setup\I18nServiceProvider::class,
 	],
 ];

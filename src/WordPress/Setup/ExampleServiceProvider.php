@@ -1,6 +1,6 @@
 <?php declare(strict_types = 1);
 
-namespace MyApp\WordPress\Services;
+namespace MyApp\WordPress\Setup;
 
 use League\Container\ServiceProvider\AbstractServiceProvider;
 use League\Container\ServiceProvider\BootableServiceProviderInterface;

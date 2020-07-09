@@ -1,11 +1,11 @@
 <?php declare(strict_types = 1);
 
-namespace MyApp\WordPress\Services\Assets;
+namespace MyApp\WordPress\Setup\Assets;
 
 use League\Container\ServiceProvider\AbstractServiceProvider;
 use League\Container\ServiceProvider\BootableServiceProviderInterface;
 
-class AdminServiceProvider extends AbstractServiceProvider implements BootableServiceProviderInterface {
+class ThemeServiceProvider extends AbstractServiceProvider implements BootableServiceProviderInterface {
 
 	/**
 	 * {@inheritDoc}
@@ -16,7 +16,7 @@ class AdminServiceProvider extends AbstractServiceProvider implements BootableSe
 	 * {@inheritDoc}
 	 */
 	public function boot(): void {
-		add_action( 'admin_enqueue_scripts', [static::class, 'enqueue'] );
+		add_action( 'wp_enqueue_scripts', [static::class, 'enqueue'] );
 	}
 
 	/**
@@ -27,21 +27,21 @@ class AdminServiceProvider extends AbstractServiceProvider implements BootableSe
 	}
 
 	public static function enqueue(): void {
-		$handle = MY_APP_SLUG . '-admin';
+		$handle = MY_APP_SLUG . '-theme';
 
 		wp_enqueue_script(
 			$handle,
-			plugin_dir_url( MY_APP_FILE ) . 'dist/admin.js',
+			plugin_dir_url( MY_APP_FILE ) . 'dist/theme.js',
 			['jquery', 'wp-i18n'],
-			filemtime( plugin_dir_path( MY_APP_FILE ) . 'dist/admin.js' ),
+			filemtime( plugin_dir_path( MY_APP_FILE ) . 'dist/theme.js' ),
 			true,
 		);
 
 		wp_enqueue_style(
 			$handle,
-			plugin_dir_url( MY_APP_FILE ) . 'dist/styles/admin.css',
+			plugin_dir_url( MY_APP_FILE ) . 'dist/styles/theme.css',
 			[],
-			filemtime( plugin_dir_path( MY_APP_FILE ) . 'dist/styles/admin.css' ),
+			filemtime( plugin_dir_path( MY_APP_FILE ) . 'dist/styles/theme.css' ),
 		);
 
 		if ( ! function_exists( 'wp_set_script_translations' ) ) {
