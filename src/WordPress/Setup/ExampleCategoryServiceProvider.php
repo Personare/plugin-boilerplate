@@ -35,7 +35,11 @@ class ExampleCategoryServiceProvider extends AbstractServiceProvider implements 
 			['example'],
 			[
 				'hierarchical' => true,
-				'labels' => $this->get_labels( __( 'Categoria', 'my-app' ), __( 'Categorias', 'my-app' ), 1 ),
+				'labels' => $this->get_labels(
+					__( 'Categoria', 'my-app' ),
+					__( 'Categorias', 'my-app' ),
+					true,
+				),
 				'show_admin_column' => true,
 				'show_ui' => true,
 			],

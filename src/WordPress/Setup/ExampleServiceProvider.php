@@ -33,7 +33,10 @@ class ExampleServiceProvider extends AbstractServiceProvider implements Bootable
 		register_post_type(
 			'example',
 			[
-				'labels' => $this->get_labels( __( 'Examplo', 'my-app' ), __( 'Exemplos', 'my-app' ) ),
+				'labels' => $this->get_labels(
+					__( 'Examplo', 'my-app' ),
+					__( 'Exemplos', 'my-app' ),
+				),
 				'public' => true,
 				'menu_icon' => 'dashicons-smiley',
 				'supports' => [ 'title', 'editor', 'thumbnail' ],
