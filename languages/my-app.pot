@@ -2,9 +2,9 @@
 # This file is distributed under the same license as the Personare Plugin Boilerplate. package.
 msgid ""
 msgstr ""
-"Project-Id-Version: Personare Plugin Boilerplate. 0.1.0\n"
+"Project-Id-Version: Personare Plugin Boilerplate. 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsteak-plugin\n"
-"POT-Creation-Date: 2020-07-08 02:59:10+00:00\n"
+"POT-Creation-Date: 2020-07-09 16:54:15+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -178,19 +178,19 @@ msgid_plural "Voltar para os %s"
 msgstr[0] ""
 msgstr[1] ""
 
-#: src/WordPress/Services/ExampleCategoryServiceProvider.php:38
+#: src/WordPress/Setup/ExampleCategoryServiceProvider.php:38
 msgid "Categoria"
 msgstr ""
 
-#: src/WordPress/Services/ExampleCategoryServiceProvider.php:38
+#: src/WordPress/Setup/ExampleCategoryServiceProvider.php:38
 msgid "Categorias"
 msgstr ""
 
-#: src/WordPress/Services/ExampleServiceProvider.php:36
+#: src/WordPress/Setup/ExampleServiceProvider.php:36
 msgid "Examplo"
 msgstr ""
 
-#: src/WordPress/Services/ExampleServiceProvider.php:36
+#: src/WordPress/Setup/ExampleServiceProvider.php:36
 msgid "Exemplos"
 msgstr ""
 
