@@ -1,5 +1,5 @@
 {
-  "name": "wpsteak-plugin",
+  "name": "plugin-boilerplate",
   "engines": {
     "node": ">=10.15.0"
   },
@@ -16,17 +16,6 @@
     "i18n": "run-s -cl i18n:textdomain i18n:pot",
     "i18n:textdomain": "wpi18n addtextdomain --exclude=dist,node_modules,resources,tests,vendor",
     "i18n:pot": "wpi18n makepot --exclude=dist,node_modules,resources,tests,vendor"
-  },
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true"
-    }
-  },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
-    }
   },
   "dependencies": {
     "@babel/core": "7.10.4",
@@ -55,19 +44,14 @@
   },
   "devDependencies": {
     "@babel/preset-react": "7.10.4",
-    "@commitlint/cli": "9.0.1",
-    "@commitlint/config-conventional": "9.0.1",
     "@wordpress/eslint-plugin": "7.1.0",
     "browser-sync": "2.26.7",
     "browser-sync-webpack-plugin": "2.2.2",
-    "commitizen": "4.1.2",
-    "cz-conventional-changelog": "3.2.0",
     "eslint": "7.4.0",
     "eslint-config-airbnb": "18.2.0",
     "eslint-plugin-import": "2.22.0",
     "eslint-plugin-jsx-a11y": "6.3.1",
     "eslint-plugin-react": "7.20.3",
-    "husky": "4.2.5",
     "node-wp-i18n": "1.2.3",
     "stylelint": "13.6.1",
     "stylelint-config-recommended-scss": "4.2.0",
