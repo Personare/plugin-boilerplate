@@ -1,6 +1,6 @@
 <?php declare(strict_types = 1);
 
-namespace MyApp\WordPress\Services;
+namespace MyApp\WordPress\Setup;
 
 use League\Container\ServiceProvider\AbstractServiceProvider;
 use League\Container\ServiceProvider\BootableServiceProviderInterface;
@@ -35,7 +35,11 @@ class ExampleCategoryServiceProvider extends AbstractServiceProvider implements 
 			['example'],
 			[
 				'hierarchical' => true,
-				'labels' => $this->get_labels( __( 'Categoria', 'my-app' ), __( 'Categorias', 'my-app' ), 1 ),
+				'labels' => $this->get_labels(
+					__( 'Categoria', 'my-app' ),
+					__( 'Categorias', 'my-app' ),
+					true,
+				),
 				'show_admin_column' => true,
 				'show_ui' => true,
 			],

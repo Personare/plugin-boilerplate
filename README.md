@@ -1,4 +1,4 @@
-# Plugin Boilerplate
+# Plugin Boilerplate ![Release](https://github.com/Personare/plugin-boilerplate/workflows/Release/badge.svg)
 Plugin destinado a ser usado como boilerplate, ele irá ser usado principalmente quando surgir a necessidade de criar um plugin WordPress do zero, 
 mas com uma estrutura já bem definida, pronto para testes unitários, linter + analisador estático de código e com container de injeção de dependência.
 ## Requirements

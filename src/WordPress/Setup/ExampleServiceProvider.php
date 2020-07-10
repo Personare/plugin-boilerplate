@@ -1,6 +1,6 @@
 <?php declare(strict_types = 1);
 
-namespace MyApp\WordPress\Services;
+namespace MyApp\WordPress\Setup;
 
 use League\Container\ServiceProvider\AbstractServiceProvider;
 use League\Container\ServiceProvider\BootableServiceProviderInterface;
@@ -33,7 +33,10 @@ class ExampleServiceProvider extends AbstractServiceProvider implements Bootable
 		register_post_type(
 			'example',
 			[
-				'labels' => $this->get_labels( __( 'Examplo', 'my-app' ), __( 'Exemplos', 'my-app' ) ),
+				'labels' => $this->get_labels(
+					__( 'Examplo', 'my-app' ),
+					__( 'Exemplos', 'my-app' ),
+				),
 				'public' => true,
 				'menu_icon' => 'dashicons-smiley',
 				'supports' => [ 'title', 'editor', 'thumbnail' ],
