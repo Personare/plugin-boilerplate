@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<ruleset name="wpsteak">
-	<description>Custom ruleset for the wpsteak plugin.</description>
+<ruleset name="wp-plugin-standards">
+	<description>Custom ruleset for the WordPress plugin.</description>
 
 	<!-- For help in understanding this file: https://github.com/squizlabs/PHP_CodeSniffer/wiki/Annotated-ruleset.xml -->
 	<!-- For help in using PHPCS: https://github.com/squizlabs/PHP_CodeSniffer/wiki/Usage -->
