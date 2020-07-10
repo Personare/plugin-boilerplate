@@ -13,6 +13,7 @@ Renomeie todas as strings abaixo para algo que faça sentido para o projeto que 
 * `MY_APP_`
 * `MyApp`
 * `my-app`
+* `plugin-boilerplate`
 ## Exemplo de uso
 Consulte os arquivos dentro de `src/WordPress/`, lá vai encontrar bons exemplos de como declarar hooks nesta estrutura,
 caso queira registrar um CPT consulte `src/WordPress/Services/ExampleServiceProvider.php` ou se caso quer registrar uma
