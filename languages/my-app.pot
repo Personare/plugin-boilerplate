@@ -3,8 +3,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Personare Plugin Boilerplate. 1.0.0\n"
-"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsteak-plugin\n"
-"POT-Creation-Date: 2020-07-09 16:54:15+00:00\n"
+"Report-Msgid-Bugs-To: "
+"https://wordpress.org/support/plugin/plugin-boilerplate\n"
+"POT-Creation-Date: 2020-07-10 03:15:02+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -13,184 +14,184 @@ msgstr ""
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "X-Generator: node-wp-i18n 1.2.3\n"
 
-#: src/WordPress/Labels/Common.php:20
+#: src/WordPress/Labels/Common.php:22
 #. translators: %s label plural lower.
 msgid "Todas %s"
 msgid_plural "Todos %s"
 msgstr[0] ""
 msgstr[1] ""
 
-#: src/WordPress/Labels/Common.php:22
+#: src/WordPress/Labels/Common.php:24
 #. translators: %s label singular lower.
 msgid "Editar %s"
 msgstr ""
 
-#: src/WordPress/Labels/Common.php:24 src/WordPress/Labels/PostType.php:22
+#: src/WordPress/Labels/Common.php:26 src/WordPress/Labels/PostType.php:28
 #. translators: %s label singular lower.
 #. translators: %s label plural lower.
 msgid "Ver %s"
 msgstr ""
 
-#: src/WordPress/Labels/Common.php:27
+#: src/WordPress/Labels/Common.php:29
 #. translators: %s label singular lower.
 msgid "Adicionar nova %s"
 msgid_plural "Adicionar novo %s"
 msgstr[0] ""
 msgstr[1] ""
 
-#: src/WordPress/Labels/Common.php:31
+#: src/WordPress/Labels/Common.php:33
 #. translators: %s label singular.
 msgid "%s pai:"
 msgstr ""
 
-#: src/WordPress/Labels/Common.php:33
+#: src/WordPress/Labels/Common.php:35
 #. translators: %s label plural lower.
 msgid "Buscar %s"
 msgstr ""
 
-#: src/WordPress/Labels/Common.php:36
+#: src/WordPress/Labels/Common.php:38
 #. translators: %s label singular lower.
 msgid "Nenhuma %s encontrada."
 msgid_plural "Nenhum %s encontrado."
 msgstr[0] ""
 msgstr[1] ""
 
-#: src/WordPress/Labels/PostType.php:18
+#: src/WordPress/Labels/PostType.php:24
 msgid "Adicionar nova"
 msgid_plural "Adicionar novo"
 msgstr[0] ""
 msgstr[1] ""
 
-#: src/WordPress/Labels/PostType.php:20
+#: src/WordPress/Labels/PostType.php:26
 #. translators: %s label singular female lower; %s label singular male lower;
 msgid "Nova %s"
 msgid_plural "Novo %s"
 msgstr[0] ""
 msgstr[1] ""
 
-#: src/WordPress/Labels/PostType.php:25
+#: src/WordPress/Labels/PostType.php:31
 #. translators: %s label singular lower.
 msgid "Nenhuma %s encontrada na Lixeira."
 msgid_plural "Nenhum %s encontrado na Lixeira."
 msgstr[0] ""
 msgstr[1] ""
 
-#: src/WordPress/Labels/PostType.php:29
+#: src/WordPress/Labels/PostType.php:35
 #. translators: %s label plural lower.
 msgid "Arquivos de %s"
 msgstr ""
 
-#: src/WordPress/Labels/PostType.php:31
+#: src/WordPress/Labels/PostType.php:37
 #. translators: %s label plural lower.
 msgid "Atributos de %s"
 msgstr ""
 
-#: src/WordPress/Labels/PostType.php:34
+#: src/WordPress/Labels/PostType.php:40
 #. translators: %s label singular lower.
 msgid "Inserir na %s"
 msgid_plural "Inserir no %s"
 msgstr[0] ""
 msgstr[1] ""
 
-#: src/WordPress/Labels/PostType.php:39
+#: src/WordPress/Labels/PostType.php:45
 #. translators: %s label singular lower.
 msgid "Carregado para esta %s"
 msgid_plural "Carregado para este %s"
 msgstr[0] ""
 msgstr[1] ""
 
-#: src/WordPress/Labels/PostType.php:42
+#: src/WordPress/Labels/PostType.php:48
 msgid "Imagem destacada"
 msgstr ""
 
-#: src/WordPress/Labels/PostType.php:43
+#: src/WordPress/Labels/PostType.php:49
 msgid "Definir imagem destacada"
 msgstr ""
 
-#: src/WordPress/Labels/PostType.php:44
+#: src/WordPress/Labels/PostType.php:50
 msgid "Remover imagem destacada"
 msgstr ""
 
-#: src/WordPress/Labels/PostType.php:45
+#: src/WordPress/Labels/PostType.php:51
 msgid "Usar como imagem destacada"
 msgstr ""
 
-#: src/WordPress/Labels/PostType.php:47
+#: src/WordPress/Labels/PostType.php:53
 #. translators: %s label plural lower.
 msgid "Filtrar lista de %s"
 msgstr ""
 
-#: src/WordPress/Labels/PostType.php:49
+#: src/WordPress/Labels/PostType.php:55
 #. translators: %s label plural lower.
 msgid "Navegação da lista de %s"
 msgstr ""
 
-#: src/WordPress/Labels/PostType.php:51
+#: src/WordPress/Labels/PostType.php:57
 #. translators: %s label plural lower.
 msgid "Lista de %s"
 msgstr ""
 
-#: src/WordPress/Labels/Taxonomy.php:19
+#: src/WordPress/Labels/Taxonomy.php:25
 #. translators: %s label singular lower.
 msgid "Atualizar %s"
 msgstr ""
 
-#: src/WordPress/Labels/Taxonomy.php:22
+#: src/WordPress/Labels/Taxonomy.php:28
 #. translators: %s label singular lower.
 msgid "Nome da nova %s"
 msgid_plural "Nome do novo %s"
 msgstr[0] ""
 msgstr[1] ""
 
-#: src/WordPress/Labels/Taxonomy.php:26
+#: src/WordPress/Labels/Taxonomy.php:32
 #. translators: %s label singular.
 msgid "%s pai"
 msgstr ""
 
-#: src/WordPress/Labels/Taxonomy.php:28
+#: src/WordPress/Labels/Taxonomy.php:34
 #. translators: %s label singular.
 msgid "%s populares"
 msgstr ""
 
-#: src/WordPress/Labels/Taxonomy.php:31
+#: src/WordPress/Labels/Taxonomy.php:37
 #. translators: %s label plural lower.
 msgid "Separe as %s com virgulas"
 msgid_plural "Separe os %s com virgulas"
 msgstr[0] ""
 msgstr[1] ""
 
-#: src/WordPress/Labels/Taxonomy.php:35
+#: src/WordPress/Labels/Taxonomy.php:41
 #. translators: %s label singular lower.
 msgid "Adicionar ou remover %s"
 msgstr ""
 
-#: src/WordPress/Labels/Taxonomy.php:38
+#: src/WordPress/Labels/Taxonomy.php:44
 #. translators: %s label plural lower.
 msgid "Escolher entre as %s mais usadas"
 msgid_plural "Escolher entre os %s mais usados"
 msgstr[0] ""
 msgstr[1] ""
 
-#: src/WordPress/Labels/Taxonomy.php:43
+#: src/WordPress/Labels/Taxonomy.php:49
 #. translators: %s label singular lower.
 msgid "Voltar para as %s"
 msgid_plural "Voltar para os %s"
 msgstr[0] ""
 msgstr[1] ""
 
-#: src/WordPress/Setup/ExampleCategoryServiceProvider.php:38
+#: src/WordPress/Setup/ExampleCategoryServiceProvider.php:39
 msgid "Categoria"
 msgstr ""
 
-#: src/WordPress/Setup/ExampleCategoryServiceProvider.php:38
+#: src/WordPress/Setup/ExampleCategoryServiceProvider.php:40
 msgid "Categorias"
 msgstr ""
 
-#: src/WordPress/Setup/ExampleServiceProvider.php:36
+#: src/WordPress/Setup/ExampleServiceProvider.php:37
 msgid "Examplo"
 msgstr ""
 
-#: src/WordPress/Setup/ExampleServiceProvider.php:36
+#: src/WordPress/Setup/ExampleServiceProvider.php:38
 msgid "Exemplos"
 msgstr ""
 
