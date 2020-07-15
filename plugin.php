@@ -16,7 +16,7 @@
  */
 
 if ( file_exists( __DIR__ . '/vendor/autoload.php' ) ) {
-	require __DIR__ . '/vendor/autoload.php';
+    require __DIR__ . '/vendor/autoload.php';
 }
 
 define( 'MY_APP_SLUG', 'my-app' );
@@ -26,12 +26,12 @@ $container = new League\Container\Container();
 
 /* register the reflection container as a delegate to enable auto wiring. */
 $container->delegate(
-	( new League\Container\ReflectionContainer() )->cacheResolutions(),
+    ( new League\Container\ReflectionContainer() )->cacheResolutions(),
 );
 
 $config = ( require __DIR__ . '/config.php' );
 
 foreach ( $config['service_providers'] as $service_provider ) {
-	$container->addServiceProvider( $service_provider );
+    $container->addServiceProvider( $service_provider );
 }
 

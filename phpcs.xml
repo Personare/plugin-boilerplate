@@ -31,10 +31,8 @@
 	<!-- Rules: WordPress Coding Standards - see
 		https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards -->
 	<rule ref="WordPress-Extra"><!-- Includes WordPress-Core -->
-		<exclude name="Generic.Arrays.DisallowShortArraySyntax"/>
-		<exclude name="Generic.Formatting.MultipleStatementAlignment"/>
-		<exclude name="WordPress.Arrays.ArrayDeclarationSpacing"/>
-		<exclude name="WordPress.Arrays.MultipleStatementAlignment"/>
+    <exclude name="Generic.Arrays.DisallowShortArraySyntax" />
+    <exclude name="Generic.WhiteSpace.DisallowSpaceIndent" />
 	</rule>
 	<!-- For help in understanding these custom sniff properties:
 		https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards/wiki/Customizable-sniff-properties -->
@@ -47,6 +45,15 @@
 		<exclude name="WordPress.Files.FileName.NotHyphenatedLowercase"/>
 	</rule>
 
+  <rule ref="Generic.WhiteSpace.ScopeIndent">
+    <properties>
+      <property name="indent" value="4"/>
+      <property name="tabIndent" value="false"/>
+    </properties>
+  </rule>
+
+  <rule ref="Generic.WhiteSpace.DisallowTabIndent" />
+
 	<rule ref="WordPress.WP.I18n">
 		<properties>
 			<property name="text_domain" type="array">
@@ -55,6 +62,12 @@
 			</property>
 		</properties>
 	</rule>
+
+  <rule ref="WordPress.WhiteSpace.ControlStructureSpacing">
+    <properties>
+      <property name="blank_line_check" value="true"/>
+    </properties>
+  </rule>
 
 	<rule ref="SlevomatCodingStandard.Namespaces">
 		<properties>
@@ -76,6 +89,7 @@
 	</rule>
 
 	<rule ref="SlevomatCodingStandard">
+		<exclude name="SlevomatCodingStandard.Arrays.SingleLineArrayWhitespace"/>
 		<exclude name="SlevomatCodingStandard.Classes.RequireSingleLineMethodSignature"/>
 		<exclude name="SlevomatCodingStandard.Commenting.DisallowOneLinePropertyDocComment"/>
 		<exclude name="SlevomatCodingStandard.Commenting.UselessInheritDocComment"/>
@@ -86,5 +100,6 @@
 		<exclude name="SlevomatCodingStandard.Namespaces.FullyQualifiedGlobalFunctions"/>
 		<exclude name="SlevomatCodingStandard.PHP.RequireExplicitAssertion"/>
 		<exclude name="SlevomatCodingStandard.Variables.DisallowSuperGlobalVariable"/>
+		<exclude name="SlevomatCodingStandard.Whitespaces.DuplicateSpaces"/>
 	</rule>
 </ruleset>

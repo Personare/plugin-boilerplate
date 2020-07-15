@@ -8,42 +8,42 @@ use MyApp\WordPress\Labels\Taxonomy;
 
 class ExampleCategoryServiceProvider extends AbstractServiceProvider implements BootableServiceProviderInterface {
 
-	use Taxonomy;
+    use Taxonomy;
 
-	/**
-	 * {@inheritDoc}
-	 */
-	protected $provides = [];
+    /**
+     * {@inheritDoc}
+     */
+    protected $provides = [];
 
-	/**
-	 * {@inheritDoc}
-	 */
-	public function boot(): void {
-		add_action( 'init', [$this, 'register_taxonomy'] );
-	}
+    /**
+     * {@inheritDoc}
+     */
+    public function boot(): void {
+        add_action( 'init', [ $this, 'register_taxonomy' ] );
+    }
 
-	/**
-	 * {@inheritDoc}
-	 */
-	public function register(): void {
-		// Register your dependencies here.
-	}
+    /**
+     * {@inheritDoc}
+     */
+    public function register(): void {
+        // Register your dependencies here.
+    }
 
-	public function register_taxonomy(): void {
-		register_taxonomy(
-			'example-category',
-			['example'],
-			[
-				'hierarchical' => true,
-				'labels' => $this->get_labels(
-					__( 'Categoria', 'my-app' ),
-					__( 'Categorias', 'my-app' ),
-					true,
-				),
-				'show_admin_column' => true,
-				'show_ui' => true,
-			],
-		);
-	}
+    public function register_taxonomy(): void {
+        register_taxonomy(
+            'example-category',
+            [ 'example' ],
+            [
+                'hierarchical'      => true,
+                'labels'            => $this->get_labels(
+                    __( 'Categoria', 'my-app' ),
+                    __( 'Categorias', 'my-app' ),
+                    true,
+                ),
+                'show_admin_column' => true,
+                'show_ui'           => true,
+            ],
+        );
+    }
 
 }
