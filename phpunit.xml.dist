@@ -16,7 +16,8 @@
 		<whitelist processUncoveredFilesFromWhitelist="false">
 			<directory suffix=".php">./src</directory>
 			<exclude>
-				<directory suffix=".php">./src/Providers</directory>
+				<directory suffix=".php">./src/Loggers</directory>
+				<directory suffix=".php">./src/WordPress</directory>
 			</exclude>
 		</whitelist>
 	</filter>
