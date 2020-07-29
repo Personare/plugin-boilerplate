@@ -1,9 +1,13 @@
-# Plugin Boilerplate ![Release](https://github.com/Personare/plugin-boilerplate/workflows/Release/badge.svg)
+# Plugin Boilerplate ![Release](https://github.com/Personare/plugin-boilerplate/workflows/Release/badge.svg) [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 Plugin destinado a ser usado como boilerplate, ele irá ser usado principalmente quando surgir a necessidade de criar um plugin WordPress do zero, 
 mas com uma estrutura já bem definida, pronto para testes unitários, linter + analisador estático de código e com container de injeção de dependência.
 ## Requirements
 * PHP >= 7.4
 * Composer
+## Release automático
+Este projeto tem uma action do [semantic release](https://github.com/semantic-release/semantic-release), que a cada push no branch `master` ela roda para verificar se será necessário gerar um novo release, para isso ele percorre os commits verificando se está no padrão [Conventional Commit](https://www.conventionalcommits.org/en/v1.0.0/).
+
+**Importante**: Quando for fazer `squash` dos `commits`, será necessário alterar a mensagem do `squash` para o padrão [Conventional Commit](https://www.conventionalcommits.org/en/v1.0.0/), caso isso não seja feito, o release não será gerado automaticamente.
 ## Scripts
 * `composer ci` irá executar todos os scripts importantes para o CI, consulte o `composer.json` caso queira roda-los individualmente;
 * `yarn lint` irá executar o linter para JavaScript + SASS;
