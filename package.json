@@ -18,7 +18,7 @@
     "i18n:pot": "wpi18n makepot --exclude=dist,node_modules,resources,tests,vendor"
   },
   "dependencies": {
-    "@babel/core": "7.10.5",
+    "@babel/core": "7.11.0",
     "@babel/preset-env": "7.10.4",
     "airbnb-browser-shims": "3.3.0",
     "autoprefixer": "9.8.5",
