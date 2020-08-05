@@ -67,9 +67,6 @@ jobs:
       - name: Lint
         run: composer lint
 
-      - name: Static analysis
-        run: composer static-analysis
-
       - name: Test
         run: composer test
 

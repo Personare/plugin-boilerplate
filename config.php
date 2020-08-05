@@ -11,13 +11,13 @@
  */
 
 return [
-	'service_providers' => [
-		MyApp\WordPress\Setup\Assets\AdminServiceProvider::class,
-		MyApp\WordPress\Setup\Assets\EditorServiceProvider::class,
-		MyApp\WordPress\Setup\Assets\LoginServiceProvider::class,
-		MyApp\WordPress\Setup\Assets\ThemeServiceProvider::class,
-		MyApp\WordPress\Setup\ExampleCategoryServiceProvider::class,
-		MyApp\WordPress\Setup\ExampleServiceProvider::class,
-		MyApp\WordPress\Setup\I18nServiceProvider::class,
-	],
+    'service_providers' => [
+        MyApp\WordPress\Setup\Assets\AdminServiceProvider::class,
+        MyApp\WordPress\Setup\Assets\EditorServiceProvider::class,
+        MyApp\WordPress\Setup\Assets\LoginServiceProvider::class,
+        MyApp\WordPress\Setup\Assets\ThemeServiceProvider::class,
+        MyApp\WordPress\Setup\ExampleCategoryServiceProvider::class,
+        MyApp\WordPress\Setup\ExampleServiceProvider::class,
+        MyApp\WordPress\Setup\I18nServiceProvider::class,
+    ],
 ];
