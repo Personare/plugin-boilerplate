@@ -34,7 +34,10 @@
       "@static-analysis",
       "@test"
     ],
-    "download-phan": "php -r \"copy('https://github.com/phan/phan/releases/latest/download/phan.phar', 'phan.phar');\"",
+    "download-phan": [
+      "php -r \"copy('https://github.com/phan/phan/releases/latest/download/phan.phar', 'phan.phar');\"",
+      "php -r \"chmod('./phan.phar', 0750);\""
+    ],
     "download-tools": [
       "@download-phan"
     ],
