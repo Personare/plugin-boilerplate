@@ -10,7 +10,6 @@ class WordPress extends AbstractLogger {
      * {@inheritDoc}
      */
     public function log( $level, $message, array $context = array() ) {
-        /* @phan-suppress-next-line PhanUndeclaredConstant */
         if ( ! ( defined( 'WP_DEBUG' ) && WP_DEBUG ) ) {
             return;
         }
