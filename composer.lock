@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "aede557a7beadaa0be07df44567f03f5",
+    "content-hash": "a15a81ff2967dd8182c09f6175ff34e1",
     "packages": [
         {
             "name": "composer/installers",
@@ -660,16 +660,16 @@
         },
         {
             "name": "php-stubs/wordpress-stubs",
-            "version": "v5.5.0",
+            "version": "v5.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-stubs/wordpress-stubs.git",
-                "reference": "7ea14fc5e4242255f6b48295fdda0512053f0dc1"
+                "reference": "5b62027b3f3b9de4994da627898599460f054584"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-stubs/wordpress-stubs/zipball/7ea14fc5e4242255f6b48295fdda0512053f0dc1",
-                "reference": "7ea14fc5e4242255f6b48295fdda0512053f0dc1",
+                "url": "https://api.github.com/repos/php-stubs/wordpress-stubs/zipball/5b62027b3f3b9de4994da627898599460f054584",
+                "reference": "5b62027b3f3b9de4994da627898599460f054584",
                 "shasum": ""
             },
             "replace": {
@@ -696,7 +696,7 @@
                 "static analysis",
                 "wordpress"
             ],
-            "time": "2020-08-18T04:31:49+00:00"
+            "time": "2020-09-02T05:31:36+00:00"
         },
         {
             "name": "phpcompatibility/php-compatibility",
