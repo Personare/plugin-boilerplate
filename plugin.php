@@ -5,7 +5,7 @@
  *
  * @package MyApp
  *
- * Plugin Name: Personare Plugin Boilerplate.
+ * Plugin Name: Personare Plugin Boilerplate
  * Description: Descreva seu plugin.
  * Version: 2.0.1
  * Author: Personare
