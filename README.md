@@ -7,6 +7,12 @@ mas com uma estrutura já bem definida, pronto para testes unitários, linter + 
 ## Release automático
 Este projeto tem uma action do [semantic release](https://github.com/semantic-release/semantic-release), que a cada push no branch `master` ela roda para verificar se será necessário gerar um novo release, para isso ele percorre os commits verificando se está no padrão [Conventional Commit](https://www.conventionalcommits.org/en/v1.0.0/).
 
+## Quickstart
+1. Entre em wp-content/plugins.
+1. Execute `composer create-project personare/plugin-boilerplate nome-do-seu-novo-plugin`.
+1. [Renomeie as strings](#não-esqueça-de-renomear).
+1. Ative o seu novo plugin.
+
 **Importante**: Quando for fazer `squash` dos `commits`, será necessário alterar a mensagem do `squash` para o padrão [Conventional Commit](https://www.conventionalcommits.org/en/v1.0.0/), caso isso não seja feito, o release não será gerado automaticamente.
 ## Scripts
 * `composer ci` irá executar todos os scripts importantes para o CI, consulte o `composer.json` caso queira roda-los individualmente;
