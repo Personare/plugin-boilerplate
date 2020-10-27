@@ -7,12 +7,12 @@
  *
  * Plugin Name: Personare Plugin Boilerplate.
  * Description: Descreva seu plugin.
- * Version: 1.2.0
+ * Version: 2.0.0
  * Author: Personare
  * Author URI: https://personare.com.br/
  * Text Domain: my-app
  * Domain Path: /languages
- * Requires PHP: 7.4
+ * Requires PHP: 7.3
  */
 
 if ( file_exists( __DIR__ . '/vendor/autoload.php' ) ) {

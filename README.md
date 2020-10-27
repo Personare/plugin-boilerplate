@@ -2,7 +2,7 @@
 Plugin destinado a ser usado como boilerplate, ele irá ser usado principalmente quando surgir a necessidade de criar um plugin WordPress do zero, 
 mas com uma estrutura já bem definida, pronto para testes unitários, linter + analisador estático de código e com container de injeção de dependência.
 ## Requirements
-* PHP >= 7.4
+* PHP >= 7.3
 * Composer
 ## Release automático
 Este projeto tem uma action do [semantic release](https://github.com/semantic-release/semantic-release), que a cada push no branch `master` ela roda para verificar se será necessário gerar um novo release, para isso ele percorre os commits verificando se está no padrão [Conventional Commit](https://www.conventionalcommits.org/en/v1.0.0/).
