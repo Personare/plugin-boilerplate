@@ -7,7 +7,7 @@
  *
  * Plugin Name: Personare Plugin Boilerplate.
  * Description: Descreva seu plugin.
- * Version: 2.0.0
+ * Version: 2.0.1
  * Author: Personare
  * Author URI: https://personare.com.br/
  * Text Domain: my-app
