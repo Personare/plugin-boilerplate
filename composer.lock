@@ -660,16 +660,16 @@
         },
         {
             "name": "php-stubs/wordpress-stubs",
-            "version": "v5.5.2",
+            "version": "v5.5.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-stubs/wordpress-stubs.git",
-                "reference": "67fcb7a882ff326d1a47ebd2a6bdb3fbc5ea3b15"
+                "reference": "7a8d0009b38c5fdec777a0a5333552ff6e445065"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-stubs/wordpress-stubs/zipball/67fcb7a882ff326d1a47ebd2a6bdb3fbc5ea3b15",
-                "reference": "67fcb7a882ff326d1a47ebd2a6bdb3fbc5ea3b15",
+                "url": "https://api.github.com/repos/php-stubs/wordpress-stubs/zipball/7a8d0009b38c5fdec777a0a5333552ff6e445065",
+                "reference": "7a8d0009b38c5fdec777a0a5333552ff6e445065",
                 "shasum": ""
             },
             "replace": {
@@ -677,7 +677,7 @@
             },
             "require-dev": {
                 "giacocorsiglia/stubs-generator": "^0.5.0",
-                "php": "^7.1 || ^8.0"
+                "php": "~7.1"
             },
             "suggest": {
                 "paragonie/sodium_compat": "Pure PHP implementation of libsodium",
@@ -696,7 +696,7 @@
                 "static analysis",
                 "wordpress"
             ],
-            "time": "2020-10-29T22:37:17+00:00"
+            "time": "2020-10-31T01:42:05+00:00"
         },
         {
             "name": "phpcompatibility/php-compatibility",
