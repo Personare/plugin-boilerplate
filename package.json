@@ -43,7 +43,7 @@
     "webpack-spritesmith": "^1.1.0"
   },
   "devDependencies": {
-    "@babel/preset-react": "^7.12.1",
+    "@babel/preset-react": "^7.12.5",
     "@wordpress/eslint-plugin": "^7.3.0",
     "browser-sync": "^2.26.13",
     "browser-sync-webpack-plugin": "^2.2.2",
