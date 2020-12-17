@@ -44,7 +44,7 @@
   },
   "devDependencies": {
     "@babel/preset-react": "^7.12.10",
-    "@wordpress/eslint-plugin": "^7.3.0",
+    "@wordpress/eslint-plugin": "^7.4.0",
     "browser-sync": "^2.26.13",
     "browser-sync-webpack-plugin": "^2.2.2",
     "eslint": "^7.15.0",
