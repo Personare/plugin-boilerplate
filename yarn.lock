@@ -6065,10 +6065,10 @@ node-sass@^5.0.0:
     stdout-stream "^1.4.0"
     "true-case-path" "^1.0.2"
 
-node-wp-i18n@^1.2.4:
-  version "1.2.4"
-  resolved "https://registry.yarnpkg.com/node-wp-i18n/-/node-wp-i18n-1.2.4.tgz#18e9ac27358fdc44d29257a42d9539998cd8aafc"
-  integrity sha512-pIeFi+ATRTEmWgpmCV+wIkELYZ8bGVzWlLZ6gw1kBQmp9gHBHgDD/eMNK2mIIEFPAsG4DoBH+r0w6kvNB7Pw/w==
+node-wp-i18n@^1.2.5:
+  version "1.2.5"
+  resolved "https://registry.yarnpkg.com/node-wp-i18n/-/node-wp-i18n-1.2.5.tgz#40d79cea7d78f91bb4addb0208d96c9cb6ead053"
+  integrity sha512-XX6GanJ+Ta5Wc/oNkhVrV+lGrhLe0zFx2pNb2diHF/DwDnwCVRHn6NSSyoU/mgTcVf4B/jtdoQ2CzWN/Q63MhA==
   dependencies:
     bluebird "^3.4.1"
     gettext-parser "^3.1.0"
