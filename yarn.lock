@@ -1447,14 +1447,14 @@
   resolved "https://registry.yarnpkg.com/@webpack-cli/serve/-/serve-1.0.1.tgz#28abe7dcb18224ccd4b4e2d37f70e5be66c3d6a9"
   integrity sha512-WGMaTMTK6NOe29Hw1WBEok9vGLfKg5C6jWzNOS/6HH1YadR+RL+TRWRcSyc81Dzulljhk/Ree9mrDM4Np9GGOQ==
 
-"@wordpress/eslint-plugin@^9.0.2":
-  version "9.0.2"
-  resolved "https://registry.yarnpkg.com/@wordpress/eslint-plugin/-/eslint-plugin-9.0.2.tgz#85b207051e7e2d18ec1c1f13cd19adff327fcbf1"
-  integrity sha512-XmD2jpxmFoAFJgxaMuKs2zT1fGsZQGWLFgc7zENOw7EFKwDNP4o8YqsU6IbkSfX0QTSqB+D91Tq1B6HBq9FCxA==
+"@wordpress/eslint-plugin@^9.0.3":
+  version "9.0.3"
+  resolved "https://registry.yarnpkg.com/@wordpress/eslint-plugin/-/eslint-plugin-9.0.3.tgz#5c485e919422655a9ed6bba03118d5ed56fe25c1"
+  integrity sha512-XRIV1oxCStVEzCjou6XDQfUNWzF025GBT4594nsDRcsgWKCUENnHaJqEOXK8RU5wSe1ApvctwpKoDCrvuIEGlg==
   dependencies:
     "@typescript-eslint/eslint-plugin" "^4.15.0"
     "@typescript-eslint/parser" "^4.15.0"
-    "@wordpress/prettier-config" "^1.0.2"
+    "@wordpress/prettier-config" "^1.0.3"
     babel-eslint "^10.1.0"
     cosmiconfig "^7.0.0"
     eslint-config-prettier "^7.1.0"
@@ -1469,10 +1469,10 @@
     prettier "npm:wp-prettier@2.2.1-beta-1"
     requireindex "^1.2.0"
 
-"@wordpress/prettier-config@^1.0.2":
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@wordpress/prettier-config/-/prettier-config-1.0.2.tgz#36c98bd4c7b97a61d008d765be2025c9e77359c2"
-  integrity sha512-puyOhbJuMjUeo2EcHmmh88mk0BFAUMTXWKyzJ0y3hlPXaPnjXdir/trj2hrI9FvWTnygLWU98qxhQUfhbIhPdw==
+"@wordpress/prettier-config@^1.0.3":
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/@wordpress/prettier-config/-/prettier-config-1.0.3.tgz#e5a59346e006a85b800dbf2ae5fc68d6fb6020a3"
+  integrity sha512-BWiped4eH3EWZ4FckDTFWrDKmb2Xi5zGef9fm9f1vg+MiloNvEItVczoXHY3BK4nF9m171xsGx22WZSi7dVopA==
 
 "@xtuc/ieee754@^1.2.0":
   version "1.2.0"
