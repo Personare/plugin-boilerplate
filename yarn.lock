@@ -1446,10 +1446,10 @@
   resolved "https://registry.yarnpkg.com/@webpack-cli/serve/-/serve-1.0.1.tgz#28abe7dcb18224ccd4b4e2d37f70e5be66c3d6a9"
   integrity sha512-WGMaTMTK6NOe29Hw1WBEok9vGLfKg5C6jWzNOS/6HH1YadR+RL+TRWRcSyc81Dzulljhk/Ree9mrDM4Np9GGOQ==
 
-"@wordpress/eslint-plugin@^9.0.3":
-  version "9.0.3"
-  resolved "https://registry.yarnpkg.com/@wordpress/eslint-plugin/-/eslint-plugin-9.0.3.tgz#5c485e919422655a9ed6bba03118d5ed56fe25c1"
-  integrity sha512-XRIV1oxCStVEzCjou6XDQfUNWzF025GBT4594nsDRcsgWKCUENnHaJqEOXK8RU5wSe1ApvctwpKoDCrvuIEGlg==
+"@wordpress/eslint-plugin@^9.0.4":
+  version "9.0.4"
+  resolved "https://registry.yarnpkg.com/@wordpress/eslint-plugin/-/eslint-plugin-9.0.4.tgz#4a71c7f9731bbaa56d819b1900cc7e4a03213dea"
+  integrity sha512-tNK08dH/60MYbvRenq4lt8QPtol+JQFqyETEEjD7GWKvUve5Q90qsrjB2mwvD+/frMuQjnfUvOcW/kC8VD9E3g==
   dependencies:
     "@typescript-eslint/eslint-plugin" "^4.15.0"
     "@typescript-eslint/parser" "^4.15.0"
