@@ -45,7 +45,7 @@
   "devDependencies": {
     "@babel/preset-react": "^7.14.5",
     "@wordpress/eslint-plugin": "^9.0.6",
-    "browser-sync": "^2.27.3",
+    "browser-sync": "^2.27.4",
     "browser-sync-webpack-plugin": "^2.3.0",
     "eslint": "^7.29.0",
     "eslint-config-airbnb": "^18.2.1",
