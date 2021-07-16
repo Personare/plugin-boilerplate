@@ -5,7 +5,7 @@
   "license": "GPL-2.0-only",
   "require": {
     "composer/installers": "^1.9",
-    "league/container": "^3.3",
+    "league/container": "^4.1",
     "php": ">=7.3",
     "psr/log": "^1.1"
   },
